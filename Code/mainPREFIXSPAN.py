@@ -14,7 +14,7 @@ if __name__ == "__main__":
     db = transform_to_limited_database(data)
 
     # Paramètre de support minimal
-    min_support = 200
+    min_support = 307
 
     import time
 
@@ -32,3 +32,7 @@ if __name__ == "__main__":
     # Calcul du temps en millisecondes
     prefixspan_time_ms = (end_time - start_time) * 1000
     print(f"\nTemps d'exécution PrefixSpan: {prefixspan_time_ms:.2f} ms")
+
+
+
+    print(len(prefixspan_result))
