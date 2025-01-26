@@ -1,4 +1,3 @@
-
 class Item:
     """Représente un item unique."""
     def __init__(self, value):
@@ -16,8 +15,6 @@ class Item:
     def __repr__(self):
         return str(self.value)
 
-
-
 class Itemset:
     """Représente un ensemble d'items."""
     def __init__(self, items):
@@ -30,13 +27,11 @@ class Itemset:
         return hash(tuple(sorted(self.items)))
 
     def __repr__(self):
-        return f"{{{' '.join(map(str, sorted(self.items)))}}}"
-
+        return ' '.join(map(str, sorted(self.items)))
 
 class Sequence:
-    """Représente une séquence composée de plusieurs itemsets."""
     def __init__(self, itemsets):
         self.itemsets = itemsets
 
-    def __repr__(self):
-        return f"<{' -> '.join(map(str, self.itemsets))}>"
+    def __str__(self):
+        return " -1 ".join(str(itemset) for itemset in self.itemsets) + " -2"

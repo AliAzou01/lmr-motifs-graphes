@@ -1,0 +1,63 @@
+<!--
+
+Ce fichier HTML permet de visualiser les motifs fréquents à partir de différents fichiers générés précédemment 
+en fonction de différentes valeurs de support minimum (min_support). L'utilisateur peut sélectionner le support 
+souhaité dans un menu déroulant, et le graphique correspondant est affiché dans un cadre (iframe).
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisation des Motifs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        iframe {
+            width: 100%; 
+            height: 80vh;
+            border: none;
+            margin-top: 20px;
+        }
+        select {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualisation des Motifs Fréquents</h1>
+    <label for="min-support-select">Choisissez un min_support :</label>
+    <select id="min-support-select">
+        <option value="visualisation/min_support_0_05.html">Min Support 5 %</option>
+        <option value="visualisation/min_support_0_06.html">Min Support 6 %</option>
+        <option value="visualisation/min_support_0_07.html">Min Support 7 %</option>
+        <option value="visualisation/min_support_0_08.html">Min Support 8 %</option>
+        <option value="visualisation/min_support_0_09.html">Min Support 9 %</option>
+        <option value="visualisation/min_support_0_1.html" selected>Min Support 10 %</option>
+        <option value="visualisation/min_support_0_11.html">Min Support 11 %</option>
+        <option value="visualisation/min_support_0_12.html">Min Support 12 %</option>
+        <option value="visualisation/min_support_0_13.html">Min Support 13 %</option>
+        <option value="visualisation/min_support_0_14.html">Min Support 14 %</option>
+        <option value="visualisation/min_support_0_15.html">Min Support 15 %</option>
+    </select>
+
+    <iframe id="visualization-frame" src="visualisation/min_support_0_1.html"></iframe>
+
+    <script>
+        const selectElement = document.getElementById('min-support-select');
+        const iframeElement = document.getElementById('visualization-frame');
+
+        // Changer le fichier affiché dans l'iframe en fonction de la sélection
+        selectElement.addEventListener('change', (event) => {
+            iframeElement.src = event.target.value;
+        });
+    </script>
+</body>
+</html>

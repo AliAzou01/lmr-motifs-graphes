@@ -42,6 +42,7 @@ class GSP:
         :param frequent_patterns: Liste des motifs fréquents actuels.
         :return: Liste de nouveaux candidats.
         """
+        
         candidates = []
         for seq1, seq2 in permutations(frequent_patterns, 2):
 

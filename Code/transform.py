@@ -1,59 +1,37 @@
-import json
+import numpy as np
 from collections import defaultdict
 from data_structures import Item, Itemset, Sequence
-from generate_data_base import *
-import time
-from GSP import *
-from PREFIXSPAN import *
-from CLOSPAN import *
-import matplotlib.pyplot as plt
 
 
-# Fonction pour charger les données JSON
-def load_json(file_path):
-    with open(file_path, 'r') as file:
-        return json.load(file)
+def replace_ids_with_port_names(patterns, port_id_to_name):
+    
 
-def transform_to_limited_database(data):
-    database = []
-    navire_sequences = defaultdict(list)
-
-    for voyage in data:
-        
-        navire_id = voyage.get("imo")
-        if not navire_id:
-            continue
-
-        # Filtrer les items invalides (ports manquants ou date absente)
-        if not (voyage.get("departure_port") and voyage.get("arrival_port") and voyage.get("arrival_date")) \
-            or (voyage.get("departure_port") == voyage.get("arrival_port")):
-            continue
-
-        items = [
-            Item(voyage['departure_port']),
-            Item(voyage['arrival_port']),
-        ]
-
-        # Ajouter l'itemset au navire correspondant
-        navire_sequences[navire_id].append(Itemset(items))
-
-    # Transformer les séquences de chaque navire en objets Sequence et trier les dates
-    for itemsets in navire_sequences.values():
-        database.append(Sequence(itemsets))
-       
-
-    return database
-
-# Fonction pour afficher la base de données
-def print_database(database):
-    for i, sequence in enumerate(database, start=1):
-        print(f"Sequence {i}: {sequence}\n\n")
+    updated_patterns = []
 
 
-# Fonction pour afficher la base de données dans un fichier texte
-def write_database_to_file(database, file_name):
-    with open(file_name, 'w') as file:
-        for i, sequence in enumerate(database, start=1):
-            file.write(f"Sequence {i}: {sequence}\n")
+    for pattern in patterns:
+        # Vérifier si le motif contient le support "#SUP:"
+        if " #SUP:" in pattern:
 
-  
+            items = pattern.split(" #SUP:")[0].strip().split(" -1")
+            named_items = []  
+
+            for itemset in items:
+                if itemset.strip(): 
+                    # Remplacer chaque ID par son nom de port ou "Unknown(ID)" si non trouvé
+                    item_names = [
+                        port_id_to_name.get(int(item), f"Unknown({item})") 
+                        for item in itemset.strip().split()
+                    ]
+                    # Créer une représentation en accolade pour l'ensemble d'éléments
+                    named_items.append("{" + ", ".join(item_names) + "}")
+            
+            # Reconstituer le motif avec les noms et ajouter le support "#SUP:"
+            updated_pattern = " -> ".join(named_items) + f" #SUP:{pattern.split(' #SUP:')[1]}"
+            updated_patterns.append(updated_pattern)
+        else:
+            # Si le motif ne contient pas de support, l'ajouter tel quel
+            updated_patterns.append(pattern)
+    
+    return updated_patterns
+

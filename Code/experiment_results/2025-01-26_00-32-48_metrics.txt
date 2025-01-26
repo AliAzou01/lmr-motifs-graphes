@@ -1,0 +1,114 @@
+Support minimum: 0.02
+Temps pris (ms): 4784.02
+Nombre de motifs trouvés: 25696
+Taille moyenne des motifs: 5.66
+Écart type: 2.00
+
+Support minimum: 0.03
+Temps pris (ms): 994.74
+Nombre de motifs trouvés: 4345
+Taille moyenne des motifs: 4.92
+Écart type: 2.14
+
+Support minimum: 0.04
+Temps pris (ms): 554.43
+Nombre de motifs trouvés: 1539
+Taille moyenne des motifs: 4.47
+Écart type: 2.10
+
+Support minimum: 0.05
+Temps pris (ms): 447.28
+Nombre de motifs trouvés: 741
+Taille moyenne des motifs: 4.29
+Écart type: 2.04
+
+Support minimum: 0.06
+Temps pris (ms): 397.81
+Nombre de motifs trouvés: 411
+Taille moyenne des motifs: 3.91
+Écart type: 1.77
+
+Support minimum: 0.07
+Temps pris (ms): 369.91
+Nombre de motifs trouvés: 225
+Taille moyenne des motifs: 3.29
+Écart type: 1.39
+
+Support minimum: 0.08
+Temps pris (ms): 352.62
+Nombre de motifs trouvés: 133
+Taille moyenne des motifs: 3.06
+Écart type: 1.19
+
+Support minimum: 0.09
+Temps pris (ms): 334.85
+Nombre de motifs trouvés: 74
+Taille moyenne des motifs: 2.59
+Écart type: 0.80
+
+Support minimum: 0.1
+Temps pris (ms): 334.85
+Nombre de motifs trouvés: 51
+Taille moyenne des motifs: 2.37
+Écart type: 0.62
+
+Support minimum: 0.11
+Temps pris (ms): 321.07
+Nombre de motifs trouvés: 29
+Taille moyenne des motifs: 2.28
+Écart type: 0.52
+
+Support minimum: 0.12
+Temps pris (ms): 320.34
+Nombre de motifs trouvés: 17
+Taille moyenne des motifs: 2.18
+Écart type: 0.38
+
+Support minimum: 0.13
+Temps pris (ms): 315.53
+Nombre de motifs trouvés: 8
+Taille moyenne des motifs: 2.00
+Écart type: 0.00
+
+Support minimum: 0.14
+Temps pris (ms): 314.08
+Nombre de motifs trouvés: 5
+Taille moyenne des motifs: 2.00
+Écart type: 0.00
+
+Support minimum: 0.15
+Temps pris (ms): 311.66
+Nombre de motifs trouvés: 1
+Taille moyenne des motifs: 2.00
+Écart type: 0.00
+
+Support minimum: 0.16
+Temps pris (ms): 313.17
+Nombre de motifs trouvés: 1
+Taille moyenne des motifs: 2.00
+Écart type: 0.00
+
+Support minimum: 0.17
+Temps pris (ms): 309.27
+Nombre de motifs trouvés: 0
+Taille moyenne des motifs: nan
+Écart type: nan
+
+Support minimum: 0.18
+Temps pris (ms): 317.69
+Nombre de motifs trouvés: 0
+Taille moyenne des motifs: nan
+Écart type: nan
+
+Support minimum: 0.19
+Temps pris (ms): 311.15
+Nombre de motifs trouvés: 0
+Taille moyenne des motifs: nan
+Écart type: nan
+
+Support minimum: 0.2
+Temps pris (ms): 311.62
+Nombre de motifs trouvés: 0
+Taille moyenne des motifs: nan
+Écart type: nan
+
