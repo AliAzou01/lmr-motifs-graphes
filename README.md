@@ -1,93 +1,128 @@
-# LMR Motifs Graphes
+-----------------------------------------------------------------------
+    README Projet Annuel 
+-----------------------------------------------------------------------
 
 
+* Ce projet est réalisé par : 
+ ________________________________________________
+| Nom         | Prénom      | Numéro d'étudiant  |
+|-------------|-------------|--------------------|
+| DJEHA       | Wassim      | 22208244           |
+| KACED       | Louheb      | 22111744           |
+| HALIT       | Rafik       | 22210612           |
+| OULMAHDI    | Riad        | 22212014           |
+| AZOU        | Ali         | 22212179           |
+| KHEYAR      | Aya         | 22309669           |
+|_____________|_____________|____________________|
 
-## Getting started
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+------------------------------------------------------------------------
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Ce projet permet d'analyser des séquences de voyages maritimes en extrayant des motifs fréquents. Les données sont transformées en séquences numériques, puis traitées pour visualiser et analyser les relations entre les différents ports maritimes. Deux approches sont utilisées pour prédire les prochains ports d'escale : l'une basée sur les séquences complètes de trajets, l'autre sur des motifs fréquents extraits à l’aide de l’algorithme PrefixSpan. À partir de ces données, des chaînes de Markov de différents ordres sont construites pour modéliser les transitions entre ports, et la précision des prédictions est évaluée sur des ensembles d’entraînement et de test.
 
-## Add your files
+---
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+## Instructions pour Exécuter les Scripts
 
-```
-cd existing_repo
-git remote add origin https://git.unicaen.fr/abdelkader.ouali/lmr-motifs-graphes.git
-git branch -M master
-git push -uf origin master
-```
+### 1. **Pré-requis**
 
-## Integrate with your tools
+Pour exécuter les différents algorithmes, il est conseillé d’avoir la version suivante de Java :
 
-- [ ] [Set up project integrations](https://git.unicaen.fr/abdelkader.ouali/lmr-motifs-graphes/-/settings/integrations)
+    openjdk version "21" 2023-09-19
 
-## Collaborate with your team
+Assurez-vous également d’avoir Python installé. Vous pouvez vérifier cela en exécutant la commande suivante dans votre terminal :
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+    python --version
 
-## Test and Deploy
+---
 
-Use the built-in continuous integration in GitLab.
+### 2. **Exécution des Scripts**
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+Pour exécuter les différents scripts du projet, suivez les étapes ci-dessous :
 
-***
+1. Accédez au répertoire `Code` où tous les scripts sont situés :
 
-# Editing this README
+    cd /chemin/vers/le/dossier/Code
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+2. Lancez le script souhaité avec la commande suivante :
 
-## Suggestions for a good README
+    python3 nom_du_script.py
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+Par exemple, pour exécuter `mainPREFIXSPAN.py` :
 
-## Name
-Choose a self-explaining name for your project.
+    python3 main/mainPREFIXSPAN.py
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+---
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+### 3. **Visualisation des Résultats**
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+- **Visualisation des motifs fréquents** : ouvrez le fichier `motif_visualisation_page.html` situé dans le dossier `visualisation_motifs`. Ce fichier peut être ouvert dans un navigateur pour voir une représentation graphique des motifs extraits, avec leur support minimum et leur taille.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+---
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+### 4. Génération du Planning pour un Navire
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Pour générer un planning pour un navire spécifique, exécutez le script suivant :
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+    python3 planning/generate_planning.py
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+Lorsque le script est lancé, il vous demandera de saisir l’IMO du navire concerné.  
+Un fichier de planning au format JSON sera ensuite généré automatiquement dans le dossier :
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+    Data/planning/
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+Le nom du fichier sera de la forme :
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+    planning_<IMO>.json
 
-## License
-For open source projects, say how it is licensed.
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+### 5. **Protocole de Prédiction des Ports (sur l'ensemble de la flotte ou un seul navire)**
+
+Voici le protocole complet pour prédire les ports à venir à partir des séquences de trajets :
+
+1. **Génération des séquences au format SPMF** à partir du fichier `merged_voyages.json` :
+
+    python3 main/generate_spmf_input.py
+
+    NB : Si vous souhaitez appliquer ce protocole sur un seul navire, exécutez `mainNavirePrefix.py` au lieu de `generate_spmf_input.py`. Cela permettra de remplir le fichier `spmf_input.txt` uniquement avec les séquences du navire spécifié. Les étapes suivantes restent identiques.
+
+2. **Séparation des séquences** en ensembles d'entraînement et de test :
+
+    python3 prediction/sequence_splitter.py
+
+3. **Extraction des motifs fréquents** à partir de l’ensemble d’entraînement (la sortie doit être redirigée vers `sequences.txt`) :
+
+    python3 main/mainPREFIXSPAN.py > text_files/sequences.txt
+
+4. **Conversion des motifs** extraits en fichier JSON utilisable par les modèles :
+
+    python3 prediction/motif_to_json.py
+
+5. **Évaluation ou validation croisée** :
+
+    - Pour la validation croisée (avec des chaînes de Markov apprises sur les motifs ou les séquences) :
+
+        python3 prediction/cross_validation_markov_from_patterns.py
+
+        ou
+
+        python3 prediction/cross_validation_markov_from_sequences.py
+
+    - Pour une évaluation simple :
+
+        - Basée sur les motifs :
+
+            python3 prediction/evaluate_markov_patern_multiple_orders.py
+
+        - Basée sur les séquences :
+
+            python3 prediction/evaluate_markov_sequence_multiple_orders.py
+---
+
+NB : Cette ligne est mise en commentaire :
+
+    plot_transition_matrix(transition_probabilities, "matrice_transition_patern")
+
+En effet, lorsqu’on travaille avec l’ensemble de la flotte, les matrices de transition peuvent devenir très volumineuses et coûteuses à générer. Par conséquent, cette fonction peut prendre beaucoup de temps à s'exécuter.  
+Si vous avez besoin de visualiser les matrices de transition, pensez à décommenter cette ligne.
+

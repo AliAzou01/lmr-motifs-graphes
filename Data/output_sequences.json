@@ -1,0 +1,325 @@
+[
+  {
+    "sequence": [
+      "BRSSZ",
+      "BRITJ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRSSZ",
+      "BRRIG"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRSSZ",
+      "BRRIO"
+    ],
+    "support": 6
+  },
+  {
+    "sequence": [
+      "BRSSZ",
+      "ARDSU"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "BRSSZ",
+      "COCTG"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRSSZ",
+      "UYMVD"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRSSZ",
+      "UYMVD",
+      "BRRIG"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRRIG",
+      "BRSSZ"
+    ],
+    "support": 5
+  },
+  {
+    "sequence": [
+      "BRRIG",
+      "BRSSZ",
+      "BRRIO"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRRIG",
+      "BRRIO"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRRIG",
+      "BRNVT"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "BRRIG",
+      "BRNVT",
+      "BRSSZ"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "BRRIG",
+      "BRNVT",
+      "BRSSZ",
+      "BRRIO"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRRIG",
+      "BRNVT",
+      "BRRIO"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "BRRIG"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "BRRIG",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "BRRIG",
+      "BRNVT"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "BRRIG",
+      "BRNVT",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "UYMVD"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "UYMVD",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "UYMVD",
+      "BRRIG"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "UYMVD",
+      "BRRIG",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "UYMVD",
+      "BRRIG",
+      "BRNVT"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "UYMVD",
+      "BRRIG",
+      "BRNVT",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "UYMVD",
+      "BRNVT"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "UYMVD",
+      "BRNVT",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "BRNVT"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "ARDSU",
+      "BRNVT",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "MXATM",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRNVT",
+      "BRSSZ"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "BRNVT",
+      "BRSSZ",
+      "BRRIO"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "BRNVT",
+      "BRRIO"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "COCTG",
+      "BRSSZ"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "COCTG",
+      "MXATM"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "UYMVD",
+      "BRSSZ"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "UYMVD",
+      "BRRIG"
+    ],
+    "support": 5
+  },
+  {
+    "sequence": [
+      "UYMVD",
+      "BRRIG",
+      "BRSSZ"
+    ],
+    "support": 4
+  },
+  {
+    "sequence": [
+      "UYMVD",
+      "BRRIG",
+      "BRNVT"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "UYMVD",
+      "BRRIG",
+      "BRNVT",
+      "BRSSZ"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "UYMVD",
+      "BRNVT"
+    ],
+    "support": 3
+  },
+  {
+    "sequence": [
+      "UYMVD",
+      "BRNVT",
+      "BRSSZ"
+    ],
+    "support": 3
+  }
+]

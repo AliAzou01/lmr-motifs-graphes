@@ -1,0 +1,56 @@
+Veuillez entrer un support minimal (valeur entre 0 et 1) : >/home/wassim/M1/lmr-motifs-graphes/Data/spmf.jar
+=============  PREFIXSPAN 0.99-2016 - STATISTICS =============
+ Total time ~ 2 ms
+ Frequent sequences count : 52
+ Max memory (mb) : 9.985542297363281
+ minsup = 3 sequences.
+ Pattern count : 52
+===================================================
+
+
+Motifs fréquents finaux (PrefixSpan via SPMF):
+{BRSSZ} -> {BRITJ} #SUP: 3
+{BRSSZ} -> {BRRIG} #SUP: 3
+{BRSSZ} -> {BRRIO} #SUP: 6
+{BRSSZ} -> {ARDSU} #SUP: 4
+{BRSSZ} -> {COCTG} #SUP: 3
+{BRSSZ} -> {UYMVD} #SUP: 3
+{BRSSZ} -> {UYMVD} -> {BRRIG} #SUP: 3
+{BRRIG} -> {BRSSZ} #SUP: 5
+{BRRIG} -> {BRSSZ} -> {BRRIO} #SUP: 3
+{BRRIG} -> {BRRIO} #SUP: 3
+{BRRIG} -> {BRNVT} #SUP: 4
+{BRRIG} -> {BRNVT} -> {BRSSZ} #SUP: 4
+{BRRIG} -> {BRNVT} -> {BRSSZ} -> {BRRIO} #SUP: 3
+{BRRIG} -> {BRNVT} -> {BRRIO} #SUP: 3
+{ARDSU} -> {BRSSZ} #SUP: 3
+{ARDSU} -> {BRRIG} #SUP: 4
+{ARDSU} -> {BRRIG} -> {BRSSZ} #SUP: 3
+{ARDSU} -> {BRRIG} -> {BRNVT} #SUP: 3
+{ARDSU} -> {BRRIG} -> {BRNVT} -> {BRSSZ} #SUP: 3
+{ARDSU} -> {UYMVD} #SUP: 4
+{ARDSU} -> {UYMVD} -> {BRSSZ} #SUP: 3
+{ARDSU} -> {UYMVD} -> {BRRIG} #SUP: 4
+{ARDSU} -> {UYMVD} -> {BRRIG} -> {BRSSZ} #SUP: 3
+{ARDSU} -> {UYMVD} -> {BRRIG} -> {BRNVT} #SUP: 3
+{ARDSU} -> {UYMVD} -> {BRRIG} -> {BRNVT} -> {BRSSZ} #SUP: 3
+{ARDSU} -> {UYMVD} -> {BRNVT} #SUP: 3
+{ARDSU} -> {UYMVD} -> {BRNVT} -> {BRSSZ} #SUP: 3
+{ARDSU} -> {BRNVT} #SUP: 3
+{ARDSU} -> {BRNVT} -> {BRSSZ} #SUP: 3
+{MXATM} -> {BRSSZ} #SUP: 3
+{BRNVT} -> {BRSSZ} #SUP: 4
+{BRNVT} -> {BRSSZ} -> {BRRIO} #SUP: 3
+{BRNVT} -> {BRRIO} #SUP: 3
+{COCTG} -> {BRSSZ} #SUP: 4
+{COCTG} -> {MXATM} #SUP: 3
+{UYMVD} -> {BRSSZ} #SUP: 4
+{UYMVD} -> {BRRIG} #SUP: 5
+{UYMVD} -> {BRRIG} -> {BRSSZ} #SUP: 4
+{UYMVD} -> {BRRIG} -> {BRNVT} #SUP: 3
+{UYMVD} -> {BRRIG} -> {BRNVT} -> {BRSSZ} #SUP: 3
+{UYMVD} -> {BRNVT} #SUP: 3
+{UYMVD} -> {BRNVT} -> {BRSSZ} #SUP: 3
+
+Temps d'exécution PrefixSpan (via SPMF): 273.25 ms
+Nombre de motifs : 42
